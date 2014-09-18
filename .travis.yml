@@ -1,6 +1,12 @@
 language: java
-
 jdk:
-  - oraclejdk8
-  - oraclejdk7
-  - openjdk7
+- oraclejdk8
+- oraclejdk7
+- openjdk7
+deploy:
+  provider: releases
+  api_key:
+    secure: RwT9w9gzLjhHZqhESjaIVfr/JvaktJrUTgUBP7VjppOO9nV2mX358Pkg68iaWviG7nwofIADN6NaVmWZ0PMB5iY+3/BIODU92nWuhg0t91BO3wB+alHD2SX76Eqme6sZTklUlgqtBQ7J4JCYMVppRy1TG9QSAq+JsybCnm84U4o=
+  file: target/helloci-1.0-SNAPSHOT.jar
+  on:
+    repo: ktk/helloci
