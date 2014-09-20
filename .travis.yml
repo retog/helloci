@@ -1,11 +1,13 @@
 language: java
 jdk:
 - openjdk7
+before_install: mvn insall -DskipTests=true -DfinalName=helloci
+install: mvn test
 deploy:
   provider: releases
   api_key:
     secure: ITdu8Kler6ZkU3AzoNzDKrgXKE7608zAdd6uhUhwDSq02fuDnl9sPy9r95xIIqu/bqNy4OYnPhkxE+DDdIkNteAs2oqM1gWz/mLM1esBhz7aR93Hk+BUWLTs+waUCDt1IWSLjAJ6UWSuRTnwOfRkdwrcq4BojrPgumBJ6RbnDV4=
-  file: target/helloci-1.0-SNAPSHOT.jar
+  file: target/helloci.jar
   on:
     repo: retog/helloci
     tags: true
