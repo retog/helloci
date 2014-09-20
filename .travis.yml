@@ -4,9 +4,7 @@ jdk:
 deploy:
   provider: releases
   api_key:
-    secure: RwT9w9gzLjhHZqhESjaIVfr/JvaktJrUTgUBP7VjppOO9nV2mX358Pkg68iaWviG7nwofIADN6NaVmWZ0PMB5iY+3/BIODU92nWuhg0t91BO3wB+alHD2SX76Eqme6sZTklUlgqtBQ7J4JCYMVppRy1TG9QSAq+JsybCnm84U4o=
+  secure: ITdu8Kler6ZkU3AzoNzDKrgXKE7608zAdd6uhUhwDSq02fuDnl9sPy9r95xIIqu/bqNy4OYnPhkxE+DDdIkNteAs2oqM1gWz/mLM1esBhz7aR93Hk+BUWLTs+waUCDt1IWSLjAJ6UWSuRTnwOfRkdwrcq4BojrPgumBJ6RbnDV4=
   file: target/helloci-1.0-SNAPSHOT.jar
   on:
     repo: retog/helloci
-    all_branches: true
-    tags: true
