@@ -1,13 +1,13 @@
 language: java
 jdk:
 - openjdk7
-before_install: mvn install -DskipTests=true -DfinalName=helloci
+before_install: mvn install -DskipTests=true -DfinalName=helloci-$TRAVIS_TAG
 install: mvn test
 deploy:
   provider: releases
   api_key:
     secure: ITdu8Kler6ZkU3AzoNzDKrgXKE7608zAdd6uhUhwDSq02fuDnl9sPy9r95xIIqu/bqNy4OYnPhkxE+DDdIkNteAs2oqM1gWz/mLM1esBhz7aR93Hk+BUWLTs+waUCDt1IWSLjAJ6UWSuRTnwOfRkdwrcq4BojrPgumBJ6RbnDV4=
-  file: target/helloci.jar
+  file: target/helloci-$TRAVIS_TAG.jar
   on:
     repo: retog/helloci
     tags: true
